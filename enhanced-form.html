@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced HTML5 Form</title>
+
+</head>
+<body>
+
+  <header>
+    <h1>Student Registration Portal</h1>
+    <p>Welcome! Use the form below to register for your desired program. Be sure to review our program list and guidelines first.</p>
+  </header>
+
+  <main>
+
+    <!-- List Section -->
+    <section>
+      <h2>Application Guidelines</h2>
+      <ol>
+        <li>Ensure your contact details are correct.</li>
+        <li>Select a course that matches your interest and background.</li>
+        <li>Complete all fields marked with a * (required).</li>
+        <li>Review your submission before hitting "Submit".</li>
+      </ol>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+      <h2>Available Programs</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Program Name</th>
+            <th>Duration</th>
+            <th>Delivery Mode</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Full Stack Web Development</td>
+            <td>6 Months</td>
+            <td>Online</td>
+          </tr>
+          <tr>
+            <td>Data Analytics</td>
+            <td>1 Year</td>
+            <td>In-person</td>
+          </tr>
+          <tr>
+            <td>Cloud Computing & DevOps</td>
+            <td>8 Months</td>
+            <td>Hybrid</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+      <h2>Inside Our Classrooms</h2>
+      <figure>
+        <img src="https://via.placeholder.com/600x300" alt="Modern classroom setup" width="100%" />
+        <figcaption>Our hands-on labs and expert-led sessions</figcaption>
+      </figure>
+      <br />
+      <video width="100%" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <label for="fname">Full Name *</label>
+          <input type="text" id="fname" name="fullname" placeholder="Jane Doe" required minlength="3" />
+
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label for="dob">Date of Birth *</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <label for="id">National ID (readonly)</label>
+          <input type="text" id="id" name="id" value="AUTO12345" readonly />
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Course Selection</legend>
+
+          <label for="course">Choose a Program *</label>
+          <select id="course" name="course" required>
+            <option value="">--Select--</option>
+            <option>Full Stack Web Development</option>
+            <option>Data Analytics</option>
+            <option>Cloud Computing & DevOps</option>
+          </select>
+
+          <label>Study Mode *</label>
+          <label><input type="radio" name="mode" value="Online" required /> Online</label>
+          <label><input type="radio" name="mode" value="In-person" /> In-person</label>
+          <label><input type="radio" name="mode" value="Hybrid" /> Hybrid</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Login Setup</legend>
+
+          <label for="username">Create Username *</label>
+          <input type="text" id="username" name="username" placeholder="janedoe123" required minlength="5" />
+
+          <label for="password">Create Password *</label>
+          <input type="password" id="password" name="password" required minlength="8" pattern=".{8,}" />
+
+          <label for="confirm">Confirm Password *</label>
+          <input type="password" id="confirm" name="confirm" required minlength="8" pattern=".{8,}" />
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Info</legend>
+
+          <label for="bio">Short Bio</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+          <label><input type="checkbox" name="terms" required /> I agree to the Terms and Conditions *</label>
+        </fieldset>
+
+        <input type="submit" value="Submit Registration" />
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Student Portal | Designed with HTML5 Best Practices</p>
+  </footer>
+
+</body>
+</html>
